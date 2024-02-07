@@ -13,7 +13,7 @@
 }
 
 h1{
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-family: 'Ubuntu Mono', monospace;
     color: var(--primary);
 }
@@ -33,7 +33,7 @@ h4{
     color: var(--primary);
 }
 p{
-    font-size: 1.075rem;
+    font-size: 1rem;
     font-family: 'Ubuntu Mono', monospace;
     color: var(--primary);
 
@@ -146,7 +146,7 @@ a {
 
     .text-content{
         p{
-            margin: 1rem 0rem;
+            margin: 0.5rem 0rem;
         }
     }
 }
@@ -189,7 +189,7 @@ a {
         color: var(--terciary);
 
         font-family: 'Silkscreen', sans-serif;
-        font-size: 1.5rem;
+        font-size: 1.175rem;
 
         text-transform: uppercase;
     }
