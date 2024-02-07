@@ -6,9 +6,9 @@
         <p>{{ choise.thirdChoise }}</p>
 
 
-        <div class="btn" @click="setFirstChoise"><p>Emotion</p></div>
-        <Link href="global" class="btn"><p>Emotion</p></Link>
-        <div class="btn"><p>Emotion</p></div>
+        <div class="btn-test" @click="setFirstChoise"><p>Emotion</p></div>
+        <Link href="global" class="btn-test"><p>Emotion</p></Link>
+        <div class="btn-test"><p>Emotion</p></div>
     </div>
     <!-- <div class="btn btn-primary"><p>Emotion1</p></div>
     <div class="btn btn-primary"><p>Emotion2</p></div>

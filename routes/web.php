@@ -16,4 +16,7 @@ use App\Http\Controllers\userChoiseController;
 Route::get('/', [userChoiseController::class, 'index']);
 Route::post('/uniqueid', [userChoiseController::class, 'store']);
 Route::inertia('/global', 'test-global');
+Route::inertia('/accueil', 'accueil');
+Route::inertia('/credits', 'credits');
+Route::inertia('/histoire', 'histoire');
 
