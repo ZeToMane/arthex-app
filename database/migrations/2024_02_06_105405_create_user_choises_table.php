@@ -11,8 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('user_choises', function (Blueprint $table) {
             $table->id();
+            $table->string('userUniqueIdphp')->unique();
+            $table->string('firstChoise');
+            $table->string('secondChoise');
+            $table->string('thirdChoise');
         });
     }
 
@@ -21,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('user_choises');
     }
 };
