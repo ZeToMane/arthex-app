@@ -5,8 +5,7 @@
                 <img src="../../content/mmi-bordeaux-icon.svg" alt="" class="logo-img">
             </div>
             <div class="titles">
-                <p class="version">v0.4.5.5 - PIcorp&trade;</p>
-                <h2 class="synth-name">/synthétique KF406/</h2>
+                <h1>Crédits</h1>
             </div>
         </div>
 

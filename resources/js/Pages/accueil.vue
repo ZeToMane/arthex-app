@@ -6,7 +6,7 @@
             </div>
             <div class="titles">
                 <p class="version">v0.4.5.5 - PIcorp&trade;</p>
-                <h2 class="synth-name">/synthétique KF406/</h2>
+                <h2 class="synth-name">/synthétique KF<span  class="insert-synth"></span>/</h2>
             </div>
         </div>
 
@@ -19,16 +19,22 @@
                     <img src="../../content/histoire-icon.svg" alt="" class="">
                 </Link>
             </div>
-            <div class="text-content">
-                <p>Bienvenue, <span>Synthétique KF406</span>,sur notre plateforme d'évaluation périodique.</p>
-                <p>Votre mission est claire : <span>comprendre, décrire et créer</span>.</p>
-                <p>Vous devrez assimiler les fondamentaux de l'art baroque, analyser les émotions véhiculées par les œuvres qui vous seront présentées, et enfin, exprimer votre propre vision émotionnelle à travers une création artistique originale.</p>
-                <p>Soyez attentif, car chaque détail compte.</p>
-                <p>Nous vous observons, KF406.</p>
+            <div class="text-content text-accueil">
+                <p><span>Synthétique KF<span class="insert-synth"></span></span>,</p>
+
+                <p>bienvenue sur notre plateforme d'évaluation semestrielle.</p>
+
+                <p>Votre mission est claire : <span>comprendre</span>, <span>décrire</span> et <span>créer</span>.</p>
+
+                <p>Vous devez <span>assimiler</span> les fondamentaux de l'art baroque, <span>identifier</span> les émotions transmises par les œuvres qui vous entoure, et <span>exprimer</span> votre vision d’une émotion.</p>
+
+                <p>Soyez attentif, chaque détail compte.</p> 
+
+                <p>Nous vous observons, <span>KF<span class="insert-synth"></span></span>.</p>
             </div>
             <div class="button-wrapper">
                 <div class="button-content">
-                    <Link href="" class="btn-type-1">
+                    <Link href="comprendre" class="btn-type-1">
                         <p class="btn-content">commencer</p>
                     </Link>
                     <Link href="" class="btn-type-1 btn-type-1-alt">
@@ -48,9 +54,20 @@
 </template>
 
 <script setup>
+import { onMounted } from 'vue';
 import { Link } from '@inertiajs/vue3';
+import { synthName} from '../global.js';
 
 components:{
     Link
 }
+
+
+onMounted(() => {
+    const insertSynthName = document.querySelectorAll('.insert-synth');
+
+    insertSynthName.forEach((element) => {
+        element.innerText = synthName['_value'];
+    });
+});
 </script>
