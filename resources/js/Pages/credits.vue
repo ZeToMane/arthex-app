@@ -27,7 +27,7 @@
             </div>
             <div class="button-wrapper">
                 <div class="button-content">
-                    <Link href="accueil" class="btn-type-1 btn-type-1-alt">
+                    <Link href="/" class="btn-type-1 btn-type-1-alt">
                         <p class="btn-content">retour</p>
                     </Link>
                 </div>

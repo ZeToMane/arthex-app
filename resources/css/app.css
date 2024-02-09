@@ -21,6 +21,35 @@
     gap: 0 !important;
 }
 
+.p-1{
+    padding: 1rem;
+}
+
+.p-4-8{
+    padding: 4px 8px;
+}
+
+.display-none{
+    display: none !important;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.color-white{
+    color: var(--primary) !important;
+}
+
+.filter-invert{
+    filter: invert(1)
+}
+
+.bg-green{
+    background: var(--secondary) !important;
+}
+
+
 h1{
     font-size: 1.25rem;
     font-family: 'Ubuntu Mono', monospace;
@@ -282,12 +311,15 @@ a {
 }
 .content-intro{
     border-top: 1px solid var(--primary);
-    justify-content: center;
+    justify-content: space-between;
 
     .img-container{
         background-color: var(--terciary);
         border: 2px solid var(--primary)
     }
+}
+.index{
+    justify-content: center;
 }
 
 .form-serie{
@@ -348,6 +380,37 @@ a {
     border: 1px solid #000;
     animation: expandHeight 1.5s cubic-bezier( 1, -0.02, 0.14, 0.99 ) forwards;
 
+}
+
+.active.btn-type-1{
+    border: 4px solid var(--terciary);
+    background: var(--secondary);
+    .btn-content {
+        border: 4px solid var(--primary);
+        color: var(--terciary);
+    }
+}
+
+.anim-typewriter{
+    color: var(--secondary);
+    font-size: 1.175em;
+}
+
+.loading{
+    display: flex;
+
+    width: 100%;
+    min-height: 2rem;
+
+    border: 2px solid white;
+    margin-bottom: 2rem;
+    padding: 0.5rem 0.5rem;
+
+    .bar{
+        width: 0%;
+        height: 100%;
+        background: var(--secondary);
+    }
 }
 
 

@@ -13,11 +13,11 @@
         <div class="content">
             <div class="after-head">
                 <div class="text-content">
-                    <h1>Examen N°333 : </h1>
+                    <h1>Examen N°3 : </h1>
                 </div>
-                <Link href="histoire" class="btn-histoire">
+                <!-- <Link href="histoire" class="btn-histoire">
                     <img src="../../content/histoire-icon.svg" alt="" class="">
-                </Link>
+                </Link> -->
             </div>
             <div class="text-content text-accueil">
                 <p><span>Synthétique KF<span class="insert-synth"></span></span>,</p>
@@ -26,7 +26,7 @@
 
                 <p>Votre mission est claire : <span>comprendre</span>, <span>décrire</span> et <span>créer</span>.</p>
 
-                <p>Vous devez <span>assimiler</span> les fondamentaux de l'art baroque, <span>identifier</span> les émotions transmises par les œuvres qui vous entoure, et <span>exprimer</span> votre vision d’une émotion.</p>
+                <p>Vous devez <span>assimiler</span> les fondamentaux de l'art baroque, <span>identifier</span> les émotions transmises par les œuvres qui vous entourent, et <span>exprimer</span> votre vision d’une émotion.</p>
 
                 <p>Soyez attentif, chaque détail compte.</p> 
 
@@ -57,6 +57,7 @@
 import { onMounted } from 'vue';
 import { Link } from '@inertiajs/vue3';
 import { synthName} from '../global.js';
+import { typeWriterEffect } from '../animation';
 
 components:{
     Link
@@ -69,5 +70,6 @@ onMounted(() => {
     insertSynthName.forEach((element) => {
         element.innerText = synthName['_value'];
     });
+    typeWriterEffect();
 });
 </script>

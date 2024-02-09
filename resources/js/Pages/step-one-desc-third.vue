@@ -12,7 +12,7 @@
 
         <div class="content content-unset-justify">
             <div class="text-content">
-                <p><span>"Le Miracle de Saint Just"</span> est une peinture de Rubens réalisée vers 1629. L'œuvre dépeint le martyr de Saint Just, un <span>jeune garçon décapité</span> à neuf ans pour sa foi chrétienne lors des persécutions de Dioclétien au IIIe siècle. Rubens parvient à représenter habilement un <span>corps décapité mais encore animé</span>, avec un expressionnisme remarquable.</p>
+                <p>Inspiré par <span>Rubens</span> et <span>Van Dyck</span>, ce tableau montre le martyr de Saint Laurent en 258, condamné par l'empereur Decius. On voit Saint Laurent <span>enchaîné sur un gril</span>, torturé par un <span>soldat avec un fer rouge</span>. Boeckhorst s'inspire de Rubens pour la composition et de Van Dyck pour l'expression <span>dramatique</span>.</p>
             </div>
             <div class="after-head img-container flex-grow-1">
                 <img src="../../content/logo.svg" alt="" class="img-painting height-100">
@@ -21,7 +21,7 @@
 
         <div class="button-wrapper">
             <div class="button-content btn-big-continue">
-                <Link href="step-one-test-one" class="btn-type-1">
+                <Link href="step-one-test-third" class="btn-type-1">
                     <p class="btn-content">
                         j'y suis
                         <img src="../../content/arrow.svg" alt="" class="">

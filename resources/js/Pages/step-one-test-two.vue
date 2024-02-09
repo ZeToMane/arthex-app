@@ -29,14 +29,14 @@
                     </Link>
                     <div class="button-wrapper canvas-container">
                         <div class="button-content justify-center">
-                            <div class="btn-type-1 btn-type-1-alt p-4-8" @click="setFirstChoise">
-                                <p class="btn-content">horreur</p>
+                            <div class="btn-type-1 btn-type-1-alt p-4-8" @click="setSecondChoise">
+                                <p class="btn-content">trouble</p>
                             </div>
-                            <div class="btn-type-1 btn-type-1-alt p-4-8" @click="setFirstChoise">
-                                <p class="btn-content">compassion</p>
+                            <div class="btn-type-1 btn-type-1-alt p-4-8" @click="setSecondChoise">
+                                <p class="btn-content">hostilité</p>
                             </div>
-                            <div class="btn-type-1 btn-type-1-alt p-4-8" @click="setFirstChoise">
-                                <p class="btn-content">confusion</p>
+                            <div class="btn-type-1 btn-type-1-alt p-4-8" @click="setSecondChoise">
+                                <p class="btn-content">espoir</p>
                             </div>
                         </div>
                     </div>
@@ -49,7 +49,7 @@
 
         <div class="button-wrapper">
             <div class="button-content btn-big-continue">
-                <Link id="validation"  href="step-one-desc-two" class="btn-type-1 display-none bg-green">
+                <Link id="validation"  href="step-one-desc-third" class="btn-type-1 display-none bg-green">
                     <p class="btn-content color-white">
                         valider
                         <img src="../../content/arrow.svg" alt="" class="filter-invert">
@@ -65,7 +65,7 @@ import { onMounted, ref } from 'vue';
 import { Link, router, usePage } from '@inertiajs/vue3';
 import { synthName} from '../global.js';
 import p5 from 'p5';
-import { firstChoise, updateFirstChoise } from '../global.js';
+import { secondChoise, updateSecondChoise } from '../global.js';
 
 components:{
     Link
@@ -233,7 +233,7 @@ onMounted(() => {
     // createSketch();
 });
 
-function setFirstChoise(event){
+function setSecondChoise(event){
     document.querySelectorAll('.btn-type-1').forEach(button => {
         button.classList.remove('active');
     });
@@ -242,8 +242,8 @@ function setFirstChoise(event){
 
     let buttonText = event.currentTarget.querySelector('.btn-content').textContent;
 
-    updateFirstChoise(buttonText); 
-    console.log(firstChoise);
+    updateSecondChoise(buttonText); 
+    console.log(secondChoise);
 
     let validationElement = document.getElementById('validation');
     if (validationElement.classList.contains('display-none')) {

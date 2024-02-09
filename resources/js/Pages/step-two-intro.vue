@@ -10,20 +10,24 @@
             </div>
         </div>
 
-        <div class="content content-unset-justify">
-            <div class="text-content">
-                <p><span>"Le Miracle de Saint Just"</span> est une peinture de Rubens réalisée vers 1629. L'œuvre dépeint le martyr de Saint Just, un <span>jeune garçon décapité</span> à neuf ans pour sa foi chrétienne lors des persécutions de Dioclétien au IIIe siècle. Rubens parvient à représenter habilement un <span>corps décapité mais encore animé</span>, avec un expressionnisme remarquable.</p>
+        <div class="content content-unset-justify ">
+            <div class="after-head">
+                <div class="text-content">
+                    <h1>Test N°2 : </h1>
+                </div>
             </div>
-            <div class="after-head img-container flex-grow-1">
-                <img src="../../content/logo.svg" alt="" class="img-painting height-100">
+            <div class="text-content">
+                <p>Vous devez <span>générer un tableau</span> suscitant une émotion familière à partir des éléments précédemment observés.</p>
+
+                <p>Veuillez sélectionner des <span>fragments visuels</span> tirés d'œuvres baroques et les assembler de manière à représenter de façon claire et concise <span>cette émotion</span>.</p>
             </div>
         </div>
 
         <div class="button-wrapper">
             <div class="button-content btn-big-continue">
-                <Link href="step-one-test-one" class="btn-type-1">
+                <Link href="step-one-desc" class="btn-type-1">
                     <p class="btn-content">
-                        j'y suis
+                        continuer
                         <img src="../../content/arrow.svg" alt="" class="">
                     </p>
                 </Link>
@@ -48,5 +52,7 @@ onMounted(() => {
     insertSynthName.forEach((element) => {
         element.innerText = synthName['_value'];
     });
+
+    
 });
 </script>

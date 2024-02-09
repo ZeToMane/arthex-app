@@ -52,5 +52,7 @@ onMounted(() => {
     insertSynthName.forEach((element) => {
         element.innerText = synthName['_value'];
     });
+
+    
 });
 </script>
