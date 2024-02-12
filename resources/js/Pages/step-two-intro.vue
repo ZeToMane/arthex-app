@@ -6,7 +6,7 @@
             </div>
             <div class="titles">
                 <p class="version">v0.4.5.5 - PIcorp&trade;</p>
-                <h2 class="synth-name">/synthétique KF<span class="insert-synth"></span>/</h2>
+                <h2 class="synth-name">/synthetic KF<span class="insert-synth"></span>/</h2>
             </div>
         </div>
 
@@ -20,12 +20,14 @@
                 <p>Vous devez <span>générer un tableau</span> suscitant une émotion familière à partir des éléments précédemment observés.</p>
 
                 <p>Veuillez sélectionner des <span>fragments visuels</span> tirés d'œuvres baroques et les assembler de manière à représenter de façon claire et concise <span>cette émotion</span>.</p>
+
+                <p>Choisissez un <span>arrière-plan</span> puis disposez plusieurs <span>éléments</span> des tableaux à l'aide de votre <span>doigt</span></p>
             </div>
         </div>
 
         <div class="button-wrapper">
             <div class="button-content btn-big-continue">
-                <Link href="step-one-desc" class="btn-type-1">
+                <Link href="step-two-test-one" class="btn-type-1">
                     <p class="btn-content">
                         continuer
                         <img src="../../content/arrow.svg" alt="" class="">
@@ -40,6 +42,7 @@
 import { onMounted } from 'vue';
 import { Link, router, usePage } from '@inertiajs/vue3';
 import { synthName} from '../global.js';
+import { typeWriterEffect } from '../animation';
 
 components:{
     Link
@@ -53,6 +56,6 @@ onMounted(() => {
         element.innerText = synthName['_value'];
     });
 
-    
+    typeWriterEffect();
 });
 </script>

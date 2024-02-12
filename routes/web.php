@@ -32,6 +32,9 @@ Route::inertia('/step-one-desc-two', 'step-one-desc-two');
 Route::inertia('/step-one-test-two', 'step-one-test-two');
 Route::inertia('/step-one-desc-third', 'step-one-desc-third');
 Route::inertia('/step-one-test-third', 'step-one-test-third');
+Route::inertia('/step-two-test-one', 'step-two-test-one');
+Route::inertia('/analyse', 'analyse');
+Route::inertia('/attention', 'attention');
 
 
 Route::get('/{filename}', function ($filename) {
@@ -42,3 +45,30 @@ Route::get('/{filename}', function ($filename) {
         abort(404);
     }
 })->where('filename', '.*\.ttf');
+
+Route::get('/bg/{filename}', function ($filename) {
+    $path = resource_path('content/canvas/bg/' . $filename);
+    if (file_exists($path)) {
+        return Response::file($path);
+    } else {
+        abort(404);
+    }
+})->where('filename', '.*\.webp');
+
+Route::get('/el/{filename}', function ($filename) {
+    $path = resource_path('content/canvas/el/' . $filename);
+    if (file_exists($path)) {
+        return Response::file($path);
+    } else {
+        abort(404);
+    }
+})->where('filename', '.*\.webp');
+
+Route::get('/img/{filename}', function ($filename) {
+    $path = resource_path('content/img/' . $filename);
+    if (file_exists($path)) {
+        return Response::file($path);
+    } else {
+        abort(404);
+    }
+})->where('filename', '.*\.webp');

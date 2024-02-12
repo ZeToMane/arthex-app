@@ -27,7 +27,7 @@
             </div>
             <div class="button-wrapper">
                 <div class="button-content">
-                    <Link href="/" class="btn-type-1 btn-type-1-alt">
+                    <Link href="/login" class="btn-type-1 btn-type-1-alt">
                         <p class="btn-content">retour</p>
                     </Link>
                 </div>
@@ -37,9 +37,15 @@
 </template>
 
 <script setup>
+import { onMounted } from 'vue';
 import { Link } from '@inertiajs/vue3';
+import { typeWriterEffect } from '../animation';
 
 components:{
     Link
 }
+
+// onMounted(() => {
+//     typeWriterEffect();
+// });
 </script>

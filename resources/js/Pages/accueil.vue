@@ -6,21 +6,21 @@
             </div>
             <div class="titles">
                 <p class="version">v0.4.5.5 - PIcorp&trade;</p>
-                <h2 class="synth-name">/synthétique KF<span  class="insert-synth"></span>/</h2>
+                <h2 class="synth-name">/synthetic KF<span  class="insert-synth"></span>/</h2>
             </div>
         </div>
 
         <div class="content">
             <div class="after-head">
                 <div class="text-content">
-                    <h1>Examen N°3 : </h1>
+                    <h1>Examen N°E48 : </h1>
                 </div>
                 <!-- <Link href="histoire" class="btn-histoire">
                     <img src="../../content/histoire-icon.svg" alt="" class="">
                 </Link> -->
             </div>
             <div class="text-content text-accueil">
-                <p><span>Synthétique KF<span class="insert-synth"></span></span>,</p>
+                <p><span>Synthetic KF<span class="insert-synth"></span></span>,</p>
 
                 <p>bienvenue sur notre plateforme d'évaluation semestrielle.</p>
 
@@ -37,17 +37,17 @@
                     <Link href="comprendre" class="btn-type-1">
                         <p class="btn-content">commencer</p>
                     </Link>
-                    <Link href="" class="btn-type-1 btn-type-1-alt">
+                    <!-- <Link href="" class="btn-type-1 btn-type-1-alt">
                         <p class="btn-content">galerie</p>
-                    </Link>
+                    </Link> -->
                 </div>
             </div>
             <div class="button-wrapper wrapper-right">
-                <Link href="credits" class="button-content">
+                <!-- <Link href="credits" class="button-content">
                     <p class="btn-credit">
                         crédits
                     </p>
-                </Link>
+                </Link> -->
             </div>
         </div>
     </div>

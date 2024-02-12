@@ -11,26 +11,13 @@
         </div>
 
         <div class="content content-unset-justify ">
-            <div class="after-head">
-                <div class="text-content">
-                    <h1>Test N°1 : </h1>
-                </div>
-            </div>
             <div class="text-content">
-                <p>Vous devrez <span>localiser le tableau</span> décrit et affiché à l'écran.</p>
-
-                <p>Une fois sur place, <span>imprégnez-vous</span> du tableau et <span>sélectionnez</span> l'émotion qui en ressort.</p>
+                <p>Vos résultats sont en train d'être analysés.</p> 
+                <br>
+                <p>Veuillez patienter...</p>
             </div>
-        </div>
-
-        <div class="button-wrapper">
-            <div class="button-content btn-big-continue">
-                <Link href="step-one-desc" class="btn-type-1">
-                    <p class="btn-content">
-                        continuer
-                        <img src="../../content/arrow.svg" alt="" class="">
-                    </p>
-                </Link>
+            <div class="loading">
+                <div class="bar"></div>
             </div>
         </div>
     </div>
@@ -41,6 +28,7 @@ import { onMounted } from 'vue';
 import { Link, router, usePage } from '@inertiajs/vue3';
 import { synthName} from '../global.js';
 import { typeWriterEffect } from '../animation';
+import gsap from 'gsap';
 
 components:{
     Link
@@ -55,5 +43,17 @@ onMounted(() => {
     });
 
     typeWriterEffect();
+
+    const bar = document.querySelector('.bar');
+
+// Utilisez GSAP pour animer la largeur de la barre de 0% à 100% en 5 secondes
+    gsap.to(bar, { 
+        duration: 4, // Durée de l'animation en secondes
+        width: "100%", // La valeur cible de la largeur
+        ease: "power2.out", // Fonction d'assouplissement (facultatif)
+        onComplete(){
+            router.get('/attention');
+        }
+    });
 });
 </script>

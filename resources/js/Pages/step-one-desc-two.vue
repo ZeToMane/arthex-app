@@ -6,7 +6,7 @@
             </div>
             <div class="titles">
                 <p class="version">v0.4.5.5 - PIcorp&trade;</p>
-                <h2 class="synth-name">/synthétique KF<span class="insert-synth"></span>/</h2>
+                <h2 class="synth-name">/synthetic KF<span class="insert-synth"></span>/</h2>
             </div>
         </div>
 
@@ -15,7 +15,7 @@
                 <p>Le tableau de <span>Rubens</span> dépeint le <span>martyr de Saint Georges</span>, qui refuse de sacrifier aux idoles malgré les tortures infligées par <span>Dioclétien</span>. La composition présente le saint sans armure, entouré d'un prêtre et de putti offrant une couronne de laurier, symbole du triomphe sur <span>le mal et la mort</span>.</p>
             </div>
             <div class="after-head img-container flex-grow-1">
-                <img src="../../content/logo.svg" alt="" class="img-painting height-100">
+                <img src="../../content/img/Le Martyre de saint Georges.webp" alt="" class="img-painting height-100">
             </div>
         </div>
 
@@ -36,6 +36,7 @@
 import { onMounted } from 'vue';
 import { Link, router, usePage } from '@inertiajs/vue3';
 import { synthName} from '../global.js';
+import { typeWriterEffect } from '../animation';
 
 components:{
     Link
@@ -48,5 +49,7 @@ onMounted(() => {
     insertSynthName.forEach((element) => {
         element.innerText = synthName['_value'];
     });
+
+    typeWriterEffect();
 });
 </script>

@@ -24,11 +24,11 @@
                 </div>
             </div>
             <div class="button-wrapper">
-                <div class="button-content">
+                <!-- <div class="button-content">
                     <Link href="" class="btn-type-1 btn-type-1-alt">
                         <p class="btn-content">galerie</p>
                     </Link>
-                </div>
+                </div> -->
             </div>
         </div>
 

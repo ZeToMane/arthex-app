@@ -12,6 +12,7 @@ export function typeWriterEffect() {
     // Iterate over each paragraph
     paragraphs.forEach((paragraph, index) => {
         // Get the text content of the paragraph
+        const textContent = paragraph.innerHTML;
         const text = paragraph.textContent.trim();
         
         // Clear the paragraph's content
@@ -26,10 +27,9 @@ export function typeWriterEffect() {
             text: text, // Set the text using TextPlugin
             ease: "power4.out", // Adjust the easing as needed
             onComplete(){
-                // setTimeout(() => {
-                //     // Redirect to the login page
-                //     router.get('/login');
-                // }, 5000); 
+                timeline.to(paragraph, {
+                    text: textContent
+                });
             }
         });
     });

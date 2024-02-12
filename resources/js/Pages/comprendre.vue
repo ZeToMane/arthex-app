@@ -6,16 +6,13 @@
             </div>
             <div class="titles">
                 <p class="version">v0.4.5.5 - PIcorp&trade;</p>
-                <h2 class="synth-name">/synthétique KF<span class="insert-synth"></span>/</h2>
+                <h2 class="synth-name">/Synthetic KF<span class="insert-synth"></span>/</h2>
             </div>
         </div>
 
         <div class="content content-unset-justify">
             <div class="after-head img-container">
-                <!-- <img src="../../content/logo.svg" alt="" class="img-painting"> -->
-                <div class="img-painting">
-
-                </div>
+                <img src="../../content/img/Le Martyre de saint Georges.webp" alt="" class="img-painting img-slider">
             </div>
             <div class="text-content">
                 <h3>Voici quelques informations qu’il vous faut assimiler :</h3>
@@ -45,6 +42,7 @@
 import { onMounted } from 'vue';
 import { Link, router, usePage } from '@inertiajs/vue3';
 import { synthName} from '../global.js';
+import { typeWriterEffect } from '../animation';
 
 components:{
     Link
@@ -60,13 +58,15 @@ onMounted(() => {
 
     const animatedBackground = document.querySelector('.img-painting');
     let imageIndex = 0;
-    const images = ['http://[::1]:5173/resources/content/logo.svg', 'http://[::1]:5173/resources/content/mmi-bordeaux-icon.svg', 'http://[::1]:5173/resources/content/arrow.svg'];
+    const images = ['/img/Le Martyre de saint Georges.webp', '/img/Le Martyre de saint Laurent.webp', '/img/Le Miracle de saint Just.webp'];
 
     function changeBackground() {
-        animatedBackground.style.backgroundImage = `url('${images[imageIndex]}')`;
+        animatedBackground.src = images[imageIndex];
         imageIndex = (imageIndex + 1) % images.length;
     }
 
     setInterval(changeBackground, 1000); // Change every 5 seconds (adjust timing as needed)
+
+    typeWriterEffect();
 });
 </script>

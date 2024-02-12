@@ -6,7 +6,7 @@ Third<template>
             </div>
             <div class="titles">
                 <p class="version">v0.4.5.5 - PIcorp&trade;</p>
-                <h2 class="synth-name">/synthétique KF<span class="insert-synth"></span>/</h2>
+                <h2 class="synth-name">/synthetic KF<span class="insert-synth"></span>/</h2>
             </div>
         </div>
 
@@ -17,16 +17,16 @@ Third<template>
                 <p>Maintenant , veuillez <span>sélectionner</span> l’émotion correspondante. </p>
             </div>
             <div class="after-head img-container flex-grow-0">
-                <img src="../../content/logo.svg" alt="" class="img-painting height-100">
+                <img src="../../content/img/Le Martyre de saint Laurent.webp" alt="" class="img-painting height-100 img-slider">
             </div>
             <div class="button-wrapper flex-grow-1">
                 <div class="button-content btn-big-continue gap-0">
-                    <Link href="step-one-test-one" class="btn-type-1">
+                    <div class="btn-type-1">
                         <p class="btn-content">
                             choix
                             <img src="../../content/arrow.svg" alt="" class="arrow-down">
                         </p>
-                    </Link>
+                    </div>
                     <div class="button-wrapper canvas-container">
                         <div class="button-content justify-center">
                             <div class="btn-type-1 btn-type-1-alt p-4-8" @click="setThirdChoise">
@@ -66,6 +66,7 @@ import { Link, router, usePage } from '@inertiajs/vue3';
 import { synthName} from '../global.js';
 import p5 from 'p5';
 import { thirdChoise, updateThirdChoise } from '../global.js';
+import { typeWriterEffect } from '../animation';
 
 components:{
     Link
@@ -231,6 +232,7 @@ onMounted(() => {
 
     // new p5(this.createSketch, this.$refs.canvas-container);
     // createSketch();
+    typeWriterEffect();
 });
 
 function setThirdChoise(event){
