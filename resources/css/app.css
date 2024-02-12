@@ -311,6 +311,7 @@ a {
     background-color: var(--primary);
     border: 2px solid var(--primary);
     max-height: 400px;
+    overflow: hidden;
 }
 .img-painting{
     width: 100%;

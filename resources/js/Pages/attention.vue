@@ -16,7 +16,7 @@
 
         <div class="content content-unset-justify ">
             <div class="text-content attention-content">
-                <p>Nos systèmes sont en <span>alerte</span>s, vos capacités émotionnelles dépassent la norme.</p>
+                <p>Nos systèmes sont en <span>alertes</span>, vos capacités émotionnelles dépassent la norme.</p>
 
                 <p>Vous représentez un <span>risque</span> potentiel pour l’espèce humaine.</p>
 
