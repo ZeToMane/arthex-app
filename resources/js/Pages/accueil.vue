@@ -22,7 +22,7 @@
             <div class="text-content text-accueil">
                 <p><span>Synthetic KF<span class="insert-synth"></span></span>,</p>
 
-                <p>bienvenue sur notre plateforme d'évaluation semestrielle.</p>
+                <p>Bienvenue sur notre plateforme d'évaluation semestrielle.</p>
 
                 <p>Votre mission est claire : <span>comprendre</span>, <span>décrire</span> et <span>créer</span>.</p>
 

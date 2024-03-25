@@ -564,6 +564,9 @@ const createSketch = (p) => {
             });
             newActiveBackground = activeBackground;
             // newActiveElements = activeElements;
+            document.getElementById("defaultCanvas0").ontouchmove = function(event) {
+                event.preventDefault();
+            };
         };
         function addElement(p5, src) {
             let element = new Element(p5, src);
@@ -728,6 +731,12 @@ class Element {
     }
 
 }
+
+// document.getElementById("canvasId").onmousedown = function(event) {
+//     event.preventDefault();
+// };
+
+
 
 
 
